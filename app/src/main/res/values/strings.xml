@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PruebaProyecto</string>
+    <string name="Nombre">Nombre</string>
+    <string-array name="clase">
+        <item name="Brujo">Brujo</item>
+        <item name="Mago">Mago</item>
+        <item name="Guerrero">Guerrero</item>
+    </string-array>
+
+    <string-array name="raza">
+        <item name="Humano">Humano</item>
+        <item name="Elfo">Elfo</item>
+        <item name="Enano">Enano</item>
+        <item name="Maldito">Maldito</item>
+    </string-array>
+
+    <string-array name="EstadoVital">
+        <item name="Anciano">Anciano</item>
+        <item name="Joven">Joven</item>
+        <item name="Adulto">Adulto</item>
+
+    </string-array>
+</resources>
