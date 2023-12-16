@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val boton : Button = findViewById(R.id.button)
-
+        //prueba error git
         val botonRaza : Spinner = findViewById(R.id.spinner1)
         val botonClase : Spinner = findViewById(R.id.spinner2)
         val botonEstado : Spinner = findViewById(R.id.spinner3)
