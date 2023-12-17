@@ -35,6 +35,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         boton.setOnClickListener {
             val intent = Intent(this@MainActivity, MostrarDatos::class.java)
+            intent.putExtra("raza",opcionSpinnerRaza)
+            intent.putExtra("clase",opcionSpinnerClase)
+            intent.putExtra("edad",opcionSpinnerEdad)
             startActivity(intent)
         }
 

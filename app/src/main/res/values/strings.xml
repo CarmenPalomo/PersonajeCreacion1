@@ -2,6 +2,7 @@
     <string name="app_name">PruebaProyecto</string>
     <string name="Nombre">Nombre</string>
     <string name="siguiente">Siguiente</string>
+    <string name="atras">Atras</string>
     <string name="escoge_la_edad">Escoge la Edad:</string>
     <string name="escoge_la_raza">Escoge la Raza:</string>
     <string name="escoge_la_clase">Escoge la clase:</string>
