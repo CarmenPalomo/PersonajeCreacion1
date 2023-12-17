@@ -58,7 +58,181 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
 
         if (opcionSpinnerClase != null && opcionSpinnerRaza != null && opcionSpinnerEdad != null) {
-            log.info("se cambia el imageView")
+            when(opcionSpinnerRaza) {
+                "Humano"->{
+                    when(opcionSpinnerClase){
+                        "Brujo"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                        "Mago"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                        "Guerrero"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                    }
+                }
+                "Elfo"->{
+                    when(opcionSpinnerClase){
+                        "Brujo"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                        "Mago"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                        "Guerrero"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                    }
+                }
+                "Enano"->{
+                    when(opcionSpinnerClase){
+                        "Brujo"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                        "Mago"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                        "Guerrero"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                    }
+                }
+                "Maldito"->{
+                    when(opcionSpinnerClase){
+                        "Brujo"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                        "Mago"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                        "Guerrero"->{
+                            when(opcionSpinnerEdad){
+                                "Anciano"->{
+
+                                }
+                                "Adulto"->{
+
+                                }
+                                "Joven"->{
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
         }
     }
 
