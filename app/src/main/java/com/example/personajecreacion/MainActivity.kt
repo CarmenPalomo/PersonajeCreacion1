@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
 import java.util.logging.Logger
@@ -18,8 +19,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private var opcionSpinnerClase: String? = null
     private var opcionSpinnerRaza: String? = null
     private var opcionSpinnerEdad: String? = null
-
-
+    private lateinit var opcionImagen: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,7 +31,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val spinnerClase: Spinner = findViewById(R.id.spinner_clase)
         val spinnerEdad: Spinner = findViewById(R.id.spinner_edad)
 
-        var nombre : String = nombreEditText.text.toString()
+
+        var nombre = nombreEditText.text.toString()
+
 
         // Se esta asociando a quien tiene que llamar el Spinner cuando ocurre el evento onItemSelected.
         spinnerRaza.onItemSelectedListener = this
@@ -50,7 +52,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-
+        var imageView: ImageView = findViewById(R.id.imageView2)
         when (parent?.id) {
             R.id.spinner_clase -> {
                 opcionSpinnerClase = parent.getItemAtPosition(position) as String
@@ -113,39 +115,42 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         "Brujo"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    opcionImagen = "elfo_brujo_anciano"
+                                    imageView.setImageResource(R.drawable.elfo_brujo_anciano)
                                 }
                                 "Adulto"->{
-
+                                    opcionImagen = "elfo_brujo_adulto"
+                                    imageView.setImageResource(R.drawable.elfo_brujo_adulto)
                                 }
                                 "Joven"->{
-
+                                    opcionImagen = "elfo_brujo_joven"
+                                    imageView.setImageResource(R.drawable.elfo_brujo_joven)
                                 }
                             }
                         }
                         "Mago"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.elfo_mago_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.elfo_mago_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.elfo_mago_joven)
                                 }
                             }
                         }
                         "Guerrero"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.elfo_guerrero_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.elfo_guerrero_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.elfo_guerrero_joven)
                                 }
                             }
                         }
