@@ -44,20 +44,18 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        log.info("objecto del spinner seleccionado")
-        log.info("valor de spiner clase $opcionSpinnerClase, raza $opcionSpinnerRaza, edad $opcionSpinnerEdad")
 
-        if (parent?.id == R.id.spinner_clase) {
-            opcionSpinnerClase = parent.getItemAtPosition(position) as String
-            log.info("se ha obtenido $opcionSpinnerClase")
-        } else if (parent?.id == R.id.spinner_raza) {
-            opcionSpinnerRaza = parent.getItemAtPosition(position) as String
-            log.info("se ha obtenido $opcionSpinnerRaza")
-        } else if (parent?.id == R.id.spinner_edad) {
-            opcionSpinnerEdad = parent.getItemAtPosition(position) as String
-            log.info("se ha obtenido $opcionSpinnerEdad")
+        when (parent?.id) {
+            R.id.spinner_clase -> {
+                opcionSpinnerClase = parent.getItemAtPosition(position) as String
+            }
+            R.id.spinner_raza -> {
+                opcionSpinnerRaza = parent.getItemAtPosition(position) as String
+            }
+            R.id.spinner_edad -> {
+                opcionSpinnerEdad = parent.getItemAtPosition(position) as String
+            }
         }
-        log.info("valor de spiner clase $opcionSpinnerClase, raza $opcionSpinnerRaza, edad $opcionSpinnerEdad")
 
         if (opcionSpinnerClase != null && opcionSpinnerRaza != null && opcionSpinnerEdad != null) {
             log.info("se cambia el imageView")
