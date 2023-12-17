@@ -6,16 +6,18 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Spinner
+import android.widget.TextView
 import java.util.logging.Logger
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     val log: Logger = Logger.getLogger("MainActivity")
 
     // Creación de variables para saber si han sido seleccionadas o no en el spinner
-    var opcionSpinnerClase: String? = null
-    var opcionSpinnerRaza: String? = null
-    var opcionSpinnerEdad: String? = null
+    private var opcionSpinnerClase: String? = null
+    private var opcionSpinnerRaza: String? = null
+    private var opcionSpinnerEdad: String? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,10 +25,13 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         setContentView(R.layout.activity_main)
 
         // Creacion de variables
+        val nombreEditText: EditText = findViewById(R.id.nombre)
         val boton: Button = findViewById(R.id.boton_siguiente)
         val spinnerRaza: Spinner = findViewById(R.id.spinner_raza)
         val spinnerClase: Spinner = findViewById(R.id.spinner_clase)
         val spinnerEdad: Spinner = findViewById(R.id.spinner_edad)
+
+        var nombre : String = nombreEditText.text.toString()
 
         // Se esta asociando a quien tiene que llamar el Spinner cuando ocurre el evento onItemSelected.
         spinnerRaza.onItemSelectedListener = this
@@ -38,6 +43,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             intent.putExtra("raza",opcionSpinnerRaza)
             intent.putExtra("clase",opcionSpinnerClase)
             intent.putExtra("edad",opcionSpinnerEdad)
+            intent.putExtra("nombre",nombre)
             startActivity(intent)
         }
 
