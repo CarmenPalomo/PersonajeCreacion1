@@ -19,6 +19,7 @@ class MostrarDatos: AppCompatActivity() {
         var edad = intent.getStringExtra("edad")
         var nombre = intent.getStringExtra("nombre")
         textview.text = "raza: $raza clase: $clase edad: $edad nombre: $nombre"
+
         botonAtras.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

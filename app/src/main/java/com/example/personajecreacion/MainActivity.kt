@@ -12,7 +12,6 @@ import android.widget.Spinner
 import java.util.logging.Logger
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
-    val log: Logger = Logger.getLogger("MainActivity")
 
     // Creación de variables para saber si han sido seleccionadas o no en el spinner
     private var opcionSpinnerClase: String? = null
