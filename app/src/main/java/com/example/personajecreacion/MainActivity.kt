@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Spinner
-import android.widget.TextView
 import java.util.logging.Logger
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
@@ -73,26 +72,26 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         "Brujo"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.humano_brujo_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.humano_brujo_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.humano_brujo_joven)
                                 }
                             }
                         }
                         "Mago"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.humano_mago_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.humano_mago_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.humano_mago_joven)
                                 }
                             }
                         }
@@ -105,7 +104,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.humano_guerrero_joven)
                                 }
                             }
                         }
@@ -162,39 +161,39 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         "Brujo"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.enano_brujo_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.enano_brujo_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.enano_brujo_joven)
                                 }
                             }
                         }
                         "Mago"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.enano_mago_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.enano_mago_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.enano_mago_joven)
                                 }
                             }
                         }
                         "Guerrero"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.enano_guerrero_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.enano_guerrero_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.enano_guerrero_joven)
                                 }
                             }
                         }
@@ -205,7 +204,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         "Brujo"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_brujo_anciano)
                                 }
                                 "Adulto"->{
 
