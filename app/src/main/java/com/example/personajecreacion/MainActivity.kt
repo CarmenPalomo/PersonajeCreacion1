@@ -98,10 +98,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         "Guerrero"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.humano_guerrero_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.humano_guerrero_adulto)
                                 }
                                 "Joven"->{
                                     imageView.setImageResource(R.drawable.humano_guerrero_joven)
@@ -207,36 +207,36 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                                     imageView.setImageResource(R.drawable.maldito_brujo_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_brujo_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_brujo_adolescente)
                                 }
                             }
                         }
                         "Mago"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_mago_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_mago_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_mago_adolescente)
                                 }
                             }
                         }
                         "Guerrero"->{
                             when(opcionSpinnerEdad){
                                 "Anciano"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_guerrero_anciano)
                                 }
                                 "Adulto"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_guerrero_adulto)
                                 }
                                 "Joven"->{
-
+                                    imageView.setImageResource(R.drawable.maldito_guerrero_adolescente)
                                 }
                             }
                         }
