@@ -20,19 +20,18 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private var opcionSpinnerRaza: String? = null
     private var opcionSpinnerEdad: String? = null
     private lateinit var opcionImagen: String
+    private lateinit var nombreEditText: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         // Creacion de variables
-        val nombreEditText: EditText = findViewById(R.id.nombre)
+        nombreEditText = findViewById(R.id.nombre)
         val boton: Button = findViewById(R.id.boton_siguiente)
         val spinnerRaza: Spinner = findViewById(R.id.spinner_raza)
         val spinnerClase: Spinner = findViewById(R.id.spinner_clase)
         val spinnerEdad: Spinner = findViewById(R.id.spinner_edad)
 
-
-        var nombre = nombreEditText.text.toString()
 
 
         // Se esta asociando a quien tiene que llamar el Spinner cuando ocurre el evento onItemSelected.
@@ -40,12 +39,14 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         spinnerEdad.onItemSelectedListener = this
         spinnerClase.onItemSelectedListener = this
 
+        nombreEditText = findViewById(R.id.nombre)
+
         boton.setOnClickListener {
             val intent = Intent(this@MainActivity, MostrarDatos::class.java)
             intent.putExtra("raza",opcionSpinnerRaza)
             intent.putExtra("clase",opcionSpinnerClase)
             intent.putExtra("edad",opcionSpinnerEdad)
-            intent.putExtra("nombre",nombre)
+            intent.putExtra("nombre",nombreEditText.text.toString())
             startActivity(intent)
         }
 
